@@ -1,0 +1,17 @@
+#vcs
+source /usr/cadtool/user_setup/08-vcs.csh
+
+#verdi nWave
+source /usr/cadtool/user_setup/08-verdi.csh
+
+#Design Compiler
+source /usr/cadtool/user_setup/08-synthesis.csh
+
+#Spyglass
+source /usr/cadtool/user_setup/08-spyglass.csh
+
+#vcs-mx
+alias src_dve 'source /usr/cadtool/user_setup/08-vcs-mx.csh'
+
+#others
+alias grep 'grep --color=auto'

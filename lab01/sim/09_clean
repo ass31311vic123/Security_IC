@@ -1,0 +1,11 @@
+rm -rf *.log
+rm -rf *.fsdb
+rm -rf tmp_*_vcs
+rm -rf simv.daidir
+rm -rf simv
+rm -rf csrc
+rm -rf ucli.key
+rm -rf verdiLog
+rm -rf novas.*
+rm -rf BSSLib.lib++
+rm -rf nWaveLog

@@ -1,0 +1,2 @@
+0 ../rtl/dut_include.v
+    1 ../rtl/alu.v

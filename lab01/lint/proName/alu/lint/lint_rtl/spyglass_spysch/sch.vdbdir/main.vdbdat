@@ -1,0 +1,20 @@
+#x HLBEGIN S.1
+#x {{COLOR=>1;}}
+#x 72 { @@n 1 a 0 @@p 1 a 0 }
+#x HLEND
+#x HLBEGIN S.2
+#x {{COLOR=>1;}}
+#x 72 { @@n 6 a 0 @@p 6 a 0 }
+#x HLEND
+#x HLBEGIN S.3
+#x {{COLOR=>1;}}
+#x 72 { @@n 15 a 0 @@p 15 a 0 }
+#x HLEND
+#x HLBEGIN S.4
+#x {{COLOR=>1;}}
+#x 72 { @@n 24 a 0 @@p 24 a 0 }
+#x HLEND
+#x HLBEGIN S.5
+#x {{COLOR=>1;}}
+#x 72 { @@n 32 a 0 @@p 32 a 0 }
+#x HLEND

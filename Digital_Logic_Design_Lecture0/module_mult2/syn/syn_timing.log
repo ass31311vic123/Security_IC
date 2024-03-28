@@ -1,0 +1,279 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : mult2
+Version: R-2020.09-SP5
+Date   : Fri Mar  8 09:59:41 2024
+****************************************
+
+Operating Conditions: nom_pvt   Library: dw_foundation.sldb
+Wire Load Model Mode: segmented
+
+  Startpoint: busy_reg (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: busy (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  busy_reg/clocked_on (**SEQGEN**)         0.00       0.00 r
+  busy_reg/Q (**SEQGEN**)                  0.00       0.00 r
+  busy (out)                               0.00       0.00 r
+  data arrival time                                   0.00
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.50       9.50
+  output external delay                   -4.00       5.50
+  data required time                                  5.50
+  -----------------------------------------------------------
+  data required time                                  5.50
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  slack (MET)                                         5.50
+
+
+  Startpoint: o_reg[6] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: o[6] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  o_reg[6]/clocked_on (**SEQGEN**)         0.00       0.00 r
+  o_reg[6]/Q (**SEQGEN**)                  0.00       0.00 r
+  o[6] (out)                               0.00       0.00 r
+  data arrival time                                   0.00
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.50       9.50
+  output external delay                   -4.00       5.50
+  data required time                                  5.50
+  -----------------------------------------------------------
+  data required time                                  5.50
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  slack (MET)                                         5.50
+
+
+  Startpoint: o_reg[5] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: o[5] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  o_reg[5]/clocked_on (**SEQGEN**)         0.00       0.00 r
+  o_reg[5]/Q (**SEQGEN**)                  0.00       0.00 r
+  o[5] (out)                               0.00       0.00 r
+  data arrival time                                   0.00
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.50       9.50
+  output external delay                   -4.00       5.50
+  data required time                                  5.50
+  -----------------------------------------------------------
+  data required time                                  5.50
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  slack (MET)                                         5.50
+
+
+  Startpoint: o_reg[4] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: o[4] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  o_reg[4]/clocked_on (**SEQGEN**)         0.00       0.00 r
+  o_reg[4]/Q (**SEQGEN**)                  0.00       0.00 r
+  o[4] (out)                               0.00       0.00 r
+  data arrival time                                   0.00
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.50       9.50
+  output external delay                   -4.00       5.50
+  data required time                                  5.50
+  -----------------------------------------------------------
+  data required time                                  5.50
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  slack (MET)                                         5.50
+
+
+  Startpoint: o_reg[3] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: o[3] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  o_reg[3]/clocked_on (**SEQGEN**)         0.00       0.00 r
+  o_reg[3]/Q (**SEQGEN**)                  0.00       0.00 r
+  o[3] (out)                               0.00       0.00 r
+  data arrival time                                   0.00
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.50       9.50
+  output external delay                   -4.00       5.50
+  data required time                                  5.50
+  -----------------------------------------------------------
+  data required time                                  5.50
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  slack (MET)                                         5.50
+
+
+  Startpoint: o_reg[2] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: o[2] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  o_reg[2]/clocked_on (**SEQGEN**)         0.00       0.00 r
+  o_reg[2]/Q (**SEQGEN**)                  0.00       0.00 r
+  o[2] (out)                               0.00       0.00 r
+  data arrival time                                   0.00
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.50       9.50
+  output external delay                   -4.00       5.50
+  data required time                                  5.50
+  -----------------------------------------------------------
+  data required time                                  5.50
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  slack (MET)                                         5.50
+
+
+  Startpoint: o_reg[1] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: o[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  o_reg[1]/clocked_on (**SEQGEN**)         0.00       0.00 r
+  o_reg[1]/Q (**SEQGEN**)                  0.00       0.00 r
+  o[1] (out)                               0.00       0.00 r
+  data arrival time                                   0.00
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.50       9.50
+  output external delay                   -4.00       5.50
+  data required time                                  5.50
+  -----------------------------------------------------------
+  data required time                                  5.50
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  slack (MET)                                         5.50
+
+
+  Startpoint: o_reg[0] (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: o[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  o_reg[0]/clocked_on (**SEQGEN**)         0.00       0.00 r
+  o_reg[0]/Q (**SEQGEN**)                  0.00       0.00 r
+  o[0] (out)                               0.00       0.00 r
+  data arrival time                                   0.00
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.50       9.50
+  output external delay                   -4.00       5.50
+  data required time                                  5.50
+  -----------------------------------------------------------
+  data required time                                  5.50
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  slack (MET)                                         5.50
+
+
+  Startpoint: start_p (input port clocked by clk)
+  Endpoint: busy_reg (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     4.00       4.00 r
+  start_p (in)                             0.00       4.00 r
+  busy_reg/next_state (**SEQGEN**)         0.00       4.00 r
+  data arrival time                                   4.00
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.50       9.50
+  busy_reg/clocked_on (**SEQGEN**)         0.00       9.50 r
+  library setup time                       0.00       9.50
+  data required time                                  9.50
+  -----------------------------------------------------------
+  data required time                                  9.50
+  data arrival time                                  -4.00
+  -----------------------------------------------------------
+  slack (MET)                                         5.50
+
+
+  Startpoint: start_p (input port clocked by clk)
+  Endpoint: busy_reg (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     4.00       4.00 r
+  start_p (in)                             0.00       4.00 r
+  B_0/Z (GTECH_BUF)                        0.00       4.00 r
+  C100/Z_0 (*SELECT_OP_3.1_3.1_1)          0.00       4.00 r
+  busy_reg/synch_enable (**SEQGEN**)       0.00       4.00 r
+  data arrival time                                   4.00
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.50       9.50
+  busy_reg/clocked_on (**SEQGEN**)         0.00       9.50 r
+  library setup time                       0.00       9.50
+  data required time                                  9.50
+  -----------------------------------------------------------
+  data required time                                  9.50
+  data arrival time                                  -4.00
+  -----------------------------------------------------------
+  slack (MET)                                         5.50
+
+
+1

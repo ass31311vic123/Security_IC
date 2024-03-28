@@ -1,0 +1,83 @@
+Command: vcs -full64 -R -f vcs.f -f sim.f -l sim.log
+*** Using c compiler gcc instead of cc ...
+                         Chronologic VCS (TM)
+         Version T-2022.06_Full64 -- Fri Mar  8 09:52:50 2024
+
+                    Copyright (c) 1991 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'file.v'
+Parsing included file '../tb/tb_top.sv'.
+Back to file 'file.v'.
+Parsing included file '../rtl/dut_include.v'.
+Parsing included file '../rtl/mult2.v'.
+Back to file '../rtl/dut_include.v'.
+Back to file 'file.v'.
+Top Level Modules:
+       tb_top
+TimeScale is 1 ns / 1 ps
+Starting vcs inline pass...
+
+1 module and 0 UDP read.
+recompiling module tb_top
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir \
+-Wl,-rpath=/usr/cad/synopsys/vcs/2022.06/linux64/lib -L/usr/cad/synopsys/vcs/2022.06/linux64/lib \
+-Wl,-rpath-link=./   objs/amcQw_d.o  _1748_archive_1.so  SIM_l.o       rmapats_mop.o \
+rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o           -lnuma -lvirsim \
+-lerrorinf -lsnpsmalloc -lvfs /usr/cadtool/cad/synopsys/verdi/cur/share/PLI/VCS/linux64/pli.a \
+-lvcsnew -lsimprofile -luclinative /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_tls.o \
+-Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive       _vcs_pli_stub_.o   /usr/cad/synopsys/vcs/2022.06/linux64/lib/vcs_save_restore_new.o \
+-ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+Command: /home/m112/m112061622/secureic/Digital_Logic_Design_Lecture0/module_mult2/sim/./simv -a sim.log +FSDB
+Chronologic VCS simulator copyright 1991-2022
+Contains Synopsys proprietary information.
+Compiler version T-2022.06_Full64; Runtime version T-2022.06_Full64;  Mar  8 09:52 2024
+*Verdi* Loading libsscore_vcs202206.so
+*Verdi* WARNING: No '-debug_access' in VCS compile options
+FSDB Dumper for VCS, Release Verdi_T-2022.06, Linux x86_64/64bit, 05/29/2022
+(C) 1996 - 2022 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'wave.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+25 input  a: 'd 4
+25 input  b: 'd 1
+25 gld_o   : 'd   4
+35 dut_o   : 'd   4
+check pass!!
+50 input  a: 'd 9
+50 input  b: 'd 3
+50 gld_o   : 'd  27
+60 dut_o   : 'd  27
+check pass!!
+75 input  a: 'd13
+75 input  b: 'd13
+75 gld_o   : 'd 169
+85 dut_o   : 'd 169
+check pass!!
+******************
+simulation pass   
+******************
+$finish called from file "../tb/tb_top.sv", line 120.
+$finish at simulation time               100000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 100000 ps
+CPU Time:      0.420 seconds;       Data structure size:   0.0Mb
+Fri Mar  8 09:52:55 2024
+CPU time: .451 seconds to compile + .308 seconds to elab + .491 seconds to link + .489 seconds in simulation

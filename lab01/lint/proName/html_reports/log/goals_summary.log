@@ -1,0 +1,29 @@
+SpyGlass Predictive Analyzer(R) - SpyGlass_vR-2020.12-SP2
+All Rights Reserved. Use, disclosure or duplication 
+without prior written permission of Synopsys Inc. is prohibited.
+Technical support: email spyglass_support@synopsys.com 
+
+Creating 'goals_summary' reports using project 'proName.prj'
+##cwd         : /home/m112/m112061622/secureic/lab01/lint
+##system      : Linux ws24 3.10.0-1160.95.1.el7.x86_64 #1 SMP Mon Jul 24 13:59:37 UTC 2023 x86_64 x86_64 x86_64 GNU/Linux
+##Date & Time : Thu Mar 28 20:31:36 2024
+Checkout 'dashboard' license at Thu Mar 28 20:31:35 2024 
+Checkout 'dashboard' license completed at Thu Mar 28 20:31:35 2024 
+Generating HTML report started at Thu Mar 28 20:31:35 2024 
+Checking project file /home/m112/m112061622/secureic/lab01/lint/proName.prj at Thu Mar 28 20:31:35 2024 
+Processing Project File:/home/m112/m112061622/secureic/lab01/lint/proName.prj 
+     Work Directory:/home/m112/m112061622/secureic/lab01/lint/proName 
+     Top Name: alu 
+     Group Mode: 0 
+     Methodology:/usr/cadtool/cad/synopsys/spyglass/2020.12-sp2/SPYGLASS_HOME/GuideWare/2020.12/block/rtl_handoff 
+    Goals executed: lint/lint_rtl:: 
+ 
+Ignoring /home/m112/m112061622/secureic/lab01/lint/proName/alu/lint/lint_rtl/spyglass.log and correspondig reports as pre-existing file /home/m112/m112061622/secureic/lab01/lint/proName/html_reports/data_files/alu_lint-lint_rtl_spyglass.log seems up-to-date 
+HTML Report creation completed at Thu Mar 28 20:31:36 2024 
+Checkin 'dashboard' license at Thu Mar 28 20:31:36 2024 
+----------------------------------------------------------------
+Report 'goals_summary' created.
+  File: /home/m112/m112061622/secureic/lab01/lint/proName/html_reports/goals_summary.html 
+----------------------------------------------------------------
+
+SpyGlass Exit Code 0

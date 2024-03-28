@@ -1,0 +1,54 @@
+ 
+****************************************
+Report : area
+Design : mult2
+Version: R-2020.09-SP5
+Date   : Fri Mar  8 09:59:41 2024
+****************************************
+
+Library(s) Used:
+
+    gtech (File: /usr/cad/synopsys/synthesis/cur/libraries/syn/gtech.db)
+
+Number of ports:                          101
+Number of nets:                           352
+Number of cells:                          202
+Number of combinational cells:            179
+Number of sequential cells:                18
+Number of macros/black boxes:               0
+Number of buf/inv:                         22
+Number of references:                       7
+
+Combinational area:                  0.000000
+Buf/Inv area:                        0.000000
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                     0.000000
+Total area:                 undefined
+
+Information: This design contains unmapped logic. (RPT-7)
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  -------------------
+mult2                                0.0000      0.0    0.0000     0.0000  0.0000  mult2
+mult_23                              0.0000      0.0    0.0000     0.0000  0.0000  *MULT_UNS_OP_8_8_16
+mult_23/*cell*5                      0.0000      0.0    0.0000     0.0000  0.0000  DW02_mult
+--------------------------------  ---------  -------  --------  ---------  ------  -------------------
+Total                                                   0.0000     0.0000  0.0000
+
+
+Area of detected synthetic parts
+--------------------------------
+  No DW parts to report!
+
+Total synthetic cell area:              0.0000  0.0%  
+
+1

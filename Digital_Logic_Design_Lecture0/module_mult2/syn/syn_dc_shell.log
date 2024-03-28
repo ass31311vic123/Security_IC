@@ -1,0 +1,156 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version R-2020.09-SP5 for linux64 - Apr 23, 2021 
+
+                    Copyright (c) 1988 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+#
+#Specify Library
+#
+set_app_var search_path [concat $search_path ../rtl/ /usr/cadtool/cbdk/CBDK_TSMC40_Arm_f2.0/CIC/SynopsysDC/db/sc9_base_rvt/]
+. /usr/cad/synopsys/synthesis/cur/libraries/syn /usr/cad/synopsys/synthesis/cur/dw/syn_ver /usr/cad/synopsys/synthesis/cur/dw/sim_ver ../rtl/ /usr/cadtool/cbdk/CBDK_TSMC40_Arm_f2.0/CIC/SynopsysDC/db/sc9_base_rvt/
+set_app_var target_library {sc9_cln40g_base_rvt_tt_typical_max_0p90v_25c.db}
+sc9_cln40g_base_rvt_tt_typical_max_0p90v_25c.db
+#set symbol_library {vendor_xxx.sdb}
+set_app_var synthetic_library {dw_foundation.sldb}
+dw_foundation.sldb
+set_app_var link_library [concat $target_library $synthetic_library "*"]
+sc9_cln40g_base_rvt_tt_typical_max_0p90v_25c.db dw_foundation.sldb *
+#
+#Read Design Files
+#
+analyze -format verilog dut_include.v
+Running PRESTO HDLC
+Compiling source file ../rtl/dut_include.v
+Opening include file ../rtl//mult2.v
+Presto compilation completed successfully.
+Warning: Can't read link_library file 'sc9_cln40g_base_rvt_tt_typical_max_0p90v_25c.db'. (UID-3)
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb'
+1
+set DESIGN_TOP mult2
+mult2
+elaborate $DESIGN_TOP
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/gtech.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/standard.sldb'
+  Loading link library 'gtech'
+Warning: Can't read link_library file 'sc9_cln40g_base_rvt_tt_typical_max_0p90v_25c.db'. (UID-3)
+Running PRESTO HDLC
+
+Inferred memory devices in process
+	in routine mult2 line 17 in file
+		'../rtl//mult2.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      busy_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine mult2 line 24 in file
+		'../rtl//mult2.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|        o_reg        | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (mult2)
+Elaborated 1 design.
+Current design is now 'mult2'.
+Warning: Can't read link_library file 'sc9_cln40g_base_rvt_tt_typical_max_0p90v_25c.db'. (UID-3)
+1
+#
+#Define Design Environment
+#
+set_operating_conditions tt_typical_max_0p90v_25c
+Warning: Operating conditions 'tt_typical_max_0p90v_25c' not found. (UID-63)
+Error: No operating conditions were found. (UID-62)
+0
+set_wire_load_model -name Small
+Error: Wire load 'Small' not found. (UID-40)
+0
+set_wire_load_mode segmented
+1
+#
+#Set Design Constraints
+#
+#set_driving_cell -lib_cell INV_X0P5B_A9TR -pin Y [all_inputs]
+set_load 0.1 [all_outputs]
+1
+create_clock -name clk -period 10 [get_ports clk]
+1
+set_clock_uncertainty -setup 0.5 clk
+1
+set_clock_uncertainty -hold  0.2 clk
+1
+set_input_delay  4 -clock clk [all_inputs]
+1
+set_output_delay 4 -clock clk [all_outputs]
+1
+#
+#Synthesize and Optimize Design
+#
+check_design
+1
+compile_ultra -no_autoungroup -no_seq_output_inversion
+Warning: Can't read link_library file 'sc9_cln40g_base_rvt_tt_typical_max_0p90v_25c.db'. (UID-3)
+Information: Performing power optimization. (PWR-850)
+Error: Could not read the following target libraries:
+sc9_cln40g_base_rvt_tt_typical_max_0p90v_25c.db 
+ (UIO-3)
+Error: Could not read the following target libraries:
+sc9_cln40g_base_rvt_tt_typical_max_0p90v_25c.db 
+ (UIO-3)
+Error: No target library found. (OPT-1312)
+0
+#
+#Analyze and Resolve Design Problems
+#
+report_constraint -verbose > syn_cons.log
+report_area -hierarchy -designware > syn_area.log
+report_timing -max_path 10 > syn_timing.log
+#
+#Save Design Database
+#
+change_names -rules verilog
+Warning: The specified replacement character (_) is conflicting with the specified allowed or restricted character.   (UCN-4)
+1
+write -format verilog -hier -out $DESIGN_TOP.vg
+Writing verilog file '/home/m112/m112061622/secureic/Digital_Logic_Design_Lecture0/module_mult2/syn/mult2.vg'.
+Warning: Module mult2 contains unmapped components.  The output netlist might not be read back into the system. (VO-12)
+1
+#
+#Exit the script
+#
+exit
+
+Memory usage for this session 74 Mbytes.
+Memory usage for this session including child processes 74 Mbytes.
+CPU usage for this session 3 seconds ( 0.00 hours ).
+Elapsed time for this session 6 seconds ( 0.00 hours ).
+
+Thank you...

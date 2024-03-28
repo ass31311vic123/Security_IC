@@ -1,0 +1,49 @@
+# Purpose:
+# This file contains the information about the relationship (sync/async) inferred 
+# and relationship inferred from the constraints defined in the SDC file.
+# 
+# The mnemonics in the paranthesis are defined below:
+# ------------------------------------------------------------------
+#       Mnemonic    Constraint              Relationship inferred 
+# ------------------------------------------------------------------
+# 1.    SCG         set_clock_group                 Aynchronous
+# 2.    SFP         set_false_path                  Aynchronous
+# 3.    SCU         set_clock_uncertainity          Synchronous
+# 4.    GEN         parent generated clock          Synchronous
+# 5.    V2R         virtual parent real clock       Synchronous
+# 6.    GRP         set_clock_group (same group)    Synchronous
+# ------------------------------------------------------------------
+# 
+# Each cell contains information in the format
+#    1. S (SCG | SFP | SCU | GEN | GRP | V2R)
+#    2. A (SCG | SFP | SCU | GEN)
+#    3. CE - No Domain Assigned because of cyclic Error
+#            One or both Clock(s) is/are part of cyclic conflict.
+#            (Refer to Txv_DomainConflict rules for details)
+#                  OR
+#    4. NC - No Domain Assigned since no constraint specified
+#            (Refer to txv_DomainMissing for details)
+#    5. NA - not applicable - for same clocks
+# 
+# S => Synchronous relation between the clocks. 
+# A => Asynchronous relation between the clocks. 
+# 
+# Cells higlighted in red represent the clock pairs for which conflict 
+# was detected because of either of the reasons:
+# 1. set_clock_group and set_clock_uncertainity were defined for a clock pair.
+#    In this case, clock pairs are considered asynchrounous.
+# 2. set_clock_group and create_generated_clock were defined for a clock pair.
+#    In this case, clock pairs are considered asynchrounous.
+# 3. set_false_path and set_clock_uncertainity were defined for a clock pair.
+#    In this case, clock pairs are considered asynchrounous.
+# 4. set_false_path and create_generated_clock were defined for a clock pair.
+#    In this case, clock pairs are considered asynchrounous.
+# Tool-Tip Reference 1- Inferred Indirectly   
+#                       The S/A relation has been assumed indirectly either due to absence of any 
+#                       SDC constraints or  due to relation existing through other clocks
+# Tool-Tip Reference 2- Inferred Directly from SDC constraints)
+#                       The S/A relation has been assumed due to direct relation specified in SDC file
+# Tool-Tip Reference 3- Inferred Indirectly with constraint
+#                       The S/A relation has been assumed due to relation existing through other clocks
+Clock Name,Clock Object, Domain,Filename:Line
+-,-,-,-

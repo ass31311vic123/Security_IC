@@ -1,0 +1,3 @@
+current_design mult2
+sdc_data -file constraints.sdc
+

@@ -1,0 +1,95 @@
+/////////////////////////////////////////////////////////////
+// Created by: Synopsys Design Compiler(R)
+// Version   : R-2020.09-SP5
+// Date      : Fri Mar  8 09:59:41 2024
+/////////////////////////////////////////////////////////////
+
+
+module mult2 ( start_p, a, b, busy, o, clk, rst_n );
+  input [7:0] a;
+  input [7:0] b;
+  output [15:0] o;
+  input start_p, clk, rst_n;
+  output busy;
+  wire   N0, N1, N2, N3, N4, N5, N6;
+  wire   [15:0] no;
+
+  \**SEQGEN**  busy_reg ( .clear(N1), .preset(1'b0), .next_state(start_p), 
+        .clocked_on(clk), .data_in(1'b0), .enable(1'b0), .Q(busy), 
+        .synch_clear(1'b0), .synch_preset(1'b0), .synch_toggle(1'b0), 
+        .synch_enable(N4) );
+  \**SEQGEN**  o_reg_15_ ( .clear(N1), .preset(1'b0), .next_state(no[15]), 
+        .clocked_on(clk), .data_in(1'b0), .enable(1'b0), .Q(o[15]), 
+        .synch_clear(1'b0), .synch_preset(1'b0), .synch_toggle(1'b0), 
+        .synch_enable(busy) );
+  \**SEQGEN**  o_reg_14_ ( .clear(N1), .preset(1'b0), .next_state(no[14]), 
+        .clocked_on(clk), .data_in(1'b0), .enable(1'b0), .Q(o[14]), 
+        .synch_clear(1'b0), .synch_preset(1'b0), .synch_toggle(1'b0), 
+        .synch_enable(busy) );
+  \**SEQGEN**  o_reg_13_ ( .clear(N1), .preset(1'b0), .next_state(no[13]), 
+        .clocked_on(clk), .data_in(1'b0), .enable(1'b0), .Q(o[13]), 
+        .synch_clear(1'b0), .synch_preset(1'b0), .synch_toggle(1'b0), 
+        .synch_enable(busy) );
+  \**SEQGEN**  o_reg_12_ ( .clear(N1), .preset(1'b0), .next_state(no[12]), 
+        .clocked_on(clk), .data_in(1'b0), .enable(1'b0), .Q(o[12]), 
+        .synch_clear(1'b0), .synch_preset(1'b0), .synch_toggle(1'b0), 
+        .synch_enable(busy) );
+  \**SEQGEN**  o_reg_11_ ( .clear(N1), .preset(1'b0), .next_state(no[11]), 
+        .clocked_on(clk), .data_in(1'b0), .enable(1'b0), .Q(o[11]), 
+        .synch_clear(1'b0), .synch_preset(1'b0), .synch_toggle(1'b0), 
+        .synch_enable(busy) );
+  \**SEQGEN**  o_reg_10_ ( .clear(N1), .preset(1'b0), .next_state(no[10]), 
+        .clocked_on(clk), .data_in(1'b0), .enable(1'b0), .Q(o[10]), 
+        .synch_clear(1'b0), .synch_preset(1'b0), .synch_toggle(1'b0), 
+        .synch_enable(busy) );
+  \**SEQGEN**  o_reg_9_ ( .clear(N1), .preset(1'b0), .next_state(no[9]), 
+        .clocked_on(clk), .data_in(1'b0), .enable(1'b0), .Q(o[9]), 
+        .synch_clear(1'b0), .synch_preset(1'b0), .synch_toggle(1'b0), 
+        .synch_enable(busy) );
+  \**SEQGEN**  o_reg_8_ ( .clear(N1), .preset(1'b0), .next_state(no[8]), 
+        .clocked_on(clk), .data_in(1'b0), .enable(1'b0), .Q(o[8]), 
+        .synch_clear(1'b0), .synch_preset(1'b0), .synch_toggle(1'b0), 
+        .synch_enable(busy) );
+  \**SEQGEN**  o_reg_7_ ( .clear(N1), .preset(1'b0), .next_state(no[7]), 
+        .clocked_on(clk), .data_in(1'b0), .enable(1'b0), .Q(o[7]), 
+        .synch_clear(1'b0), .synch_preset(1'b0), .synch_toggle(1'b0), 
+        .synch_enable(busy) );
+  \**SEQGEN**  o_reg_6_ ( .clear(N1), .preset(1'b0), .next_state(no[6]), 
+        .clocked_on(clk), .data_in(1'b0), .enable(1'b0), .Q(o[6]), 
+        .synch_clear(1'b0), .synch_preset(1'b0), .synch_toggle(1'b0), 
+        .synch_enable(busy) );
+  \**SEQGEN**  o_reg_5_ ( .clear(N1), .preset(1'b0), .next_state(no[5]), 
+        .clocked_on(clk), .data_in(1'b0), .enable(1'b0), .Q(o[5]), 
+        .synch_clear(1'b0), .synch_preset(1'b0), .synch_toggle(1'b0), 
+        .synch_enable(busy) );
+  \**SEQGEN**  o_reg_4_ ( .clear(N1), .preset(1'b0), .next_state(no[4]), 
+        .clocked_on(clk), .data_in(1'b0), .enable(1'b0), .Q(o[4]), 
+        .synch_clear(1'b0), .synch_preset(1'b0), .synch_toggle(1'b0), 
+        .synch_enable(busy) );
+  \**SEQGEN**  o_reg_3_ ( .clear(N1), .preset(1'b0), .next_state(no[3]), 
+        .clocked_on(clk), .data_in(1'b0), .enable(1'b0), .Q(o[3]), 
+        .synch_clear(1'b0), .synch_preset(1'b0), .synch_toggle(1'b0), 
+        .synch_enable(busy) );
+  \**SEQGEN**  o_reg_2_ ( .clear(N1), .preset(1'b0), .next_state(no[2]), 
+        .clocked_on(clk), .data_in(1'b0), .enable(1'b0), .Q(o[2]), 
+        .synch_clear(1'b0), .synch_preset(1'b0), .synch_toggle(1'b0), 
+        .synch_enable(busy) );
+  \**SEQGEN**  o_reg_1_ ( .clear(N1), .preset(1'b0), .next_state(no[1]), 
+        .clocked_on(clk), .data_in(1'b0), .enable(1'b0), .Q(o[1]), 
+        .synch_clear(1'b0), .synch_preset(1'b0), .synch_toggle(1'b0), 
+        .synch_enable(busy) );
+  \**SEQGEN**  o_reg_0_ ( .clear(N1), .preset(1'b0), .next_state(no[0]), 
+        .clocked_on(clk), .data_in(1'b0), .enable(1'b0), .Q(o[0]), 
+        .synch_clear(1'b0), .synch_preset(1'b0), .synch_toggle(1'b0), 
+        .synch_enable(busy) );
+  MULT_UNS_OP mult_23 ( .A(a), .B(b), .Z(no) );
+  SELECT_OP C100 ( .DATA1(1'b1), .DATA2(1'b1), .DATA3(1'b0), .CONTROL1(N0), 
+        .CONTROL2(N6), .CONTROL3(N3), .Z(N4) );
+  GTECH_BUF B_0 ( .A(start_p), .Z(N0) );
+  GTECH_NOT I_0 ( .A(rst_n), .Z(N1) );
+  GTECH_OR2 C106 ( .A(busy), .B(start_p), .Z(N2) );
+  GTECH_NOT I_1 ( .A(N2), .Z(N3) );
+  GTECH_NOT I_2 ( .A(start_p), .Z(N5) );
+  GTECH_AND2 C109 ( .A(busy), .B(N5), .Z(N6) );
+endmodule
+

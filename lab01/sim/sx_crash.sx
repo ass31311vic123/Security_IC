@@ -1,0 +1,21 @@
+### Custom WaveView session file (version U-2023.03-SP1 build May 23, ) ###
+### saved at 08:45:19 on Thu Mar 28 2024 ###
+scalar list
+browserOpened
+
+#DesignSection
+<?xml version="1.0"?>
+<ROOT>
+  <info>
+    <version>Version U-2023.03-SP1</version>
+  </info>
+  <setup_common_data>
+    <project_name>cx_simulation</project_name>
+    <cx_startup_dir>/home/m112/m112061622/secureic/lab01/sim</cx_startup_dir>
+    <project_dir>/home/m112/m112061622/secureic/lab01/sim/cx_simulation</project_dir>
+    <setup_simulator>0:1 0:4 0:7 0:3 5:4 5:7</setup_simulator>
+  </setup_common_data>
+  <setup_lsf_opt/>
+  <setup_design/>
+  <multiple_views/>
+</ROOT>

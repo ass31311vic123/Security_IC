@@ -1,0 +1,6 @@
+Module Name,Module Type,Port Name,Direction,Width,Index,Comment Source,Comment 
+alu,Top_Level,op_in,INPUT,4,[3:0],-,-
+alu,Top_Level,a_in,INPUT,8,[7:0],-,-
+alu,Top_Level,b_in,INPUT,8,[7:0],-,-
+alu,Top_Level,result_out,OUTPUT,8,[7:0],-,-
+alu,Top_Level,ovflow_out,OUTPUT,1,-,-,-

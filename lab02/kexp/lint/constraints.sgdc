@@ -1,0 +1,3 @@
+current_design kexp
+sdc_data -file constraints.sdc
+

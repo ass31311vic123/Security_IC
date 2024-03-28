@@ -1,0 +1,15 @@
+Date Created     : 28-03-2024 20:31:30
+SpyGlass Version : SpyGlass_vR-2020.12-SP2
+Project Name     : proName
+Goal Name        : lint/lint_rtl
+Scenario Name    : default_scenario
+Top              : alu
+
+Message Summary
+Severity   Non-Waived  Waived
+FATAL           0         0
+ERROR           0         0
+WARNING         0         0
+INFO            5         0
+
+-dashboard_data sync_crossings 

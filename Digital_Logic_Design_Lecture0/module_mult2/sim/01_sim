@@ -1,0 +1,16 @@
+
+rm -rf simv
+rm -rf simv.daidir
+
+vcs -full64 -R \
+    -f vcs.f \
+    -f sim.f \
+    -l sim.log \
+    "$@"
+
+grep --color "simulation timeout" sim.log
+grep --color "simulation pass" sim.log
+grep --color "simulation fail" sim.log
+grep --color "Warning-" sim.log
+grep --color "Error-" sim.log
+

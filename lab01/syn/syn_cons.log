@@ -1,0 +1,44 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -verbose
+Design : alu
+Version: R-2020.09-SP5
+Date   : Thu Mar 28 20:32:26 2024
+****************************************
+
+
+    Net: DP_OP_33J1_122_8880/n29
+
+    max_transition         0.38
+  - Transition Time        0.34
+  ------------------------------
+    Slack                  0.05  (MET)
+
+
+    Net: DP_OP_33J1_122_8880/n29
+
+    max_capacitance        0.03
+  - Capacitance            0.03
+  ------------------------------
+    Slack                  0.00  (MET)
+
+
+    Net: n137
+
+    Capacitance            0.00
+  - min_capacitance        0.00
+  ------------------------------
+    Slack                  0.00  (MET)
+
+
+    Design: alu
+
+    max_leakage_power          0.00
+  - Current Leakage Power      1.98
+  ----------------------------------
+    Slack                     -1.98  (VIOLATED)
+
+
+1

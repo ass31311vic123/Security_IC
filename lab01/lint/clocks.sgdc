@@ -1,0 +1,54 @@
+current_design  "alu"
+
+########################################################################
+#Section 1: List of source clocks
+#These clocks have set_false_path/set_clock_groups/set_clock_uncertainty associated with them
+
+########################################################################
+#Section 2: List of remaining source clocks
+#These clocks do not have the set_false_path/set_clock_groups/set_clock_uncertainty constraints associated with them
+
+########################################################################
+#Section 3: List of generated clocks
+#These clocks satisfy either of the following conditions
+ #a. Generated clocks have domains different than the domains of their source clocks
+ #b. Generated clocks are specified on the black-boxes
+
+########################################################################
+#Section 4: List of generated clocks which have same domain as that of their source clock 
+
+########################################################################
+#Section 5: List of valid set_case_analyis constraint generated from set_case_analysis command.
+
+########################################################################
+#Section 6: List of valid abstract_port/input constraint generated from set_input_delay command.
+
+########################################################################
+#Section 7: List of valid output constraint generated from set_output_delay command.
+
+########################################################################
+#Section 8: List of valid clock_sense constraint generated from set_clock_sense command.
+#These constraint are generated only for -stop_propagtion in set_clock_sense.
+
+########################################################################
+#Section 9: List of valid cdc false path constraint generated from sdc command.
+#These constraint are generated only for real clocks.
+
+########################################################################
+#Section 10: List of disable_timing constraint generated from set_disable_timing sdc command.
+#These constraint are generated only for those sdc command which have object list as lib cells only.
+
+########################################################################
+#Section 11: List of valid false path constraint generated from sdc command.
+#These constraint are generated only for real clocks.
+#The type for constraint false_path is specified as below:
+#        - scg_logically_exclusive: When it is translated from set_clock_group -logically_exclusive
+#        - scg_physically_exclusive: When it is translated from set_clock_group -physically_exclusive
+#        - scg_asynchronous: When it is translated from set_clock_group -asynchronous
+#        - sfp: When it is translated from set_false_path
+
+########################################################################
+#Section 12: List of valid sg_multi_cycle constraint generated from sdc command.
+
+########################################################################
+#Section 13: List of valid set_lib_timing_mode constraint generated from set_mode sdc command.

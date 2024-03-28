@@ -1,0 +1,6 @@
+SCHEMA@@PName@@Dir@@Msb@@Lsb@@Desc@@DU@@DU_BBOX
+VALUE@@op_in@@INPUT@@3@@0@@-@@alu@@No
+VALUE@@a_in@@INPUT@@7@@0@@-@@alu@@No
+VALUE@@b_in@@INPUT@@7@@0@@-@@alu@@No
+VALUE@@result_out@@OUTPUT@@7@@0@@-@@alu@@No
+VALUE@@ovflow_out@@OUTPUT@@0@@0@@-@@alu@@No
